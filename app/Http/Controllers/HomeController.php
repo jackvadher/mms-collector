@@ -23,7 +23,19 @@ class HomeController extends Controller {
      */
     public function index() {
         $AllMms = MmsLog::all();
+
         return view('home', ["AllMms" => $AllMms]);
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function getMms() {
+        $AllMms = MmsLog::all();
+
+        return view('mms-log', ["AllMms" => $AllMms]);
     }
 
 }
