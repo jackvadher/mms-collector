@@ -78,10 +78,6 @@ var Login = function() {
             $('.forget-form').hide();
         });
     }
-
- 
-  
-
     return {
         //main function to initiate the module
         init: function() {
@@ -90,9 +86,13 @@ var Login = function() {
 
             // init background slide images
             $('.login-bg').backstretch([
-                "assets/pages/img/login/bg1.jpg",
-                "assets/pages/img/login/bg2.jpg",
-                "assets/pages/img/login/bg3.jpg"
+//                "assets/pages/img/login/bg1.jpg",
+//                "assets/pages/img/login/bg2.jpg",
+//                "assets/pages/img/login/bg3.jpg"
+                "assets/bg1.jpg",
+                "assets/bg2.jpg",
+                "assets/bg3.jpg"
+
                 ], {
                   fade: 1000,
                   duration: 8000
